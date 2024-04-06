@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12/"
+     xml:base="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#giyiliyor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#giyiliyor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#giyiyor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#giyiyor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#giyiyor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satılıyor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satılıyor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıyor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıyor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıyor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ad">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#açıklama -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#açıklama">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#beden -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#beden">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>26</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>28</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>30</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>32</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>34</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>36</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>38</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>40</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>42</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>44</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>46</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>48</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>50</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>52</rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                        <rdf:first>54</rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                <rdf:first>56</rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                        <rdf:first>L</rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                <rdf:first>M</rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                        <rdf:first>S</rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                <rdf:first>XL</rdf:first>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                        <rdf:first>XS</rdf:first>
+                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                <rdf:first>XXL</rdf:first>
+                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                        <rdf:first>XXS</rdf:first>
+                                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                <rdf:first>standartBeden</rdf:first>
+                                                                                                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#boy -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#boy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#email">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#fiyat -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#fiyat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#id">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Bluz</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Ceket</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Elbise</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Etek</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Gomlek</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Hirka</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Kaban</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Kazak</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>Kot</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>Kot Pantolon</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>Mont</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>Palto</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>Pantolon</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>Ruzgarlik</rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                        <rdf:first>Sweatshirt</rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                <rdf:first>Tisort</rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                        <rdf:first>Trenckot</rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                <rdf:first>Yagmurluk</rdf:first>
+                                                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kilo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kilo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kumaş -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#kumaş">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Akrilik</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Angora</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Ipek</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Kasmir</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Keten</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Kot</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Lateks</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Naylon</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>Pamuklu</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>Polyester</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>Yunlu</rdf:first>
+                                                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#puan -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#puan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#renk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#renk">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Altin</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Bej</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Beyaz</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Fusya</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Gri</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Gri Tas Rengi</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Gumus</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Haki Yesili</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>Kahverengi</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>Kirmizi</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>Lacivert</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>Mavi</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>Mint Yesili</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>Mor</rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                        <rdf:first>Pembe</rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                <rdf:first>Sari</rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                        <rdf:first>Siyah</rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                <rdf:first>Turkuaz</rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                        <rdf:first>Turuncu</rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                <rdf:first>Yesil</rdf:first>
+                                                                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satışadedi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satışadedi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#stok -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#stok">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#yayın_tarihi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#yayın_tarihi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#üretildiği_yer -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#üretildiği_yer">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Afganistan</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Almanya</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>Amerika Birlesik Devletleri</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Arjantin</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>Avustralya</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>Avusturya</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>Birlesik Krallik</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>Brezilya</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>Cek Cumhuriyeti</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>Fransa</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>Guney Afrika</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>Guney Kore</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>Hindistan</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>Hollanda</rdf:first>
+                                                                                                                                <rdf:rest>
+                                                                                                                                    <rdf:Description>
+                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                        <rdf:first>Ingiltere</rdf:first>
+                                                                                                                                        <rdf:rest>
+                                                                                                                                            <rdf:Description>
+                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                <rdf:first>Ispanya</rdf:first>
+                                                                                                                                                <rdf:rest>
+                                                                                                                                                    <rdf:Description>
+                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                        <rdf:first>Isvec</rdf:first>
+                                                                                                                                                        <rdf:rest>
+                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                <rdf:first>Isvicre</rdf:first>
+                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                        <rdf:first>Italya</rdf:first>
+                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                <rdf:first>Japonya</rdf:first>
+                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                        <rdf:first>Kanada</rdf:first>
+                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                <rdf:first>Malezya</rdf:first>
+                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                        <rdf:first>Meksika</rdf:first>
+                                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                <rdf:first>Polonya</rdf:first>
+                                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                        <rdf:first>Rusya</rdf:first>
+                                                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                                <rdf:first>Suudi Arabistan</rdf:first>
+                                                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                                        <rdf:first>Turkiye</rdf:first>
+                                                                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                                                <rdf:first>Ukrayna</rdf:first>
+                                                                                                                                                                                                                                                <rdf:rest>
+                                                                                                                                                                                                                                                    <rdf:Description>
+                                                                                                                                                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                                                        <rdf:first>Yeni Zelanda</rdf:first>
+                                                                                                                                                                                                                                                        <rdf:rest>
+                                                                                                                                                                                                                                                            <rdf:Description>
+                                                                                                                                                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                                                                                                                                                <rdf:first>cin</rdf:first>
+                                                                                                                                                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                                </rdf:rest>
+                                                                                                                                                                            </rdf:Description>
+                                                                                                                                                                        </rdf:rest>
+                                                                                                                                                                    </rdf:Description>
+                                                                                                                                                                </rdf:rest>
+                                                                                                                                                            </rdf:Description>
+                                                                                                                                                        </rdf:rest>
+                                                                                                                                                    </rdf:Description>
+                                                                                                                                                </rdf:rest>
+                                                                                                                                            </rdf:Description>
+                                                                                                                                        </rdf:rest>
+                                                                                                                                    </rdf:Description>
+                                                                                                                                </rdf:rest>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#insan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#insan">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ad"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#insan"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#id"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#insan"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#jean_pantolon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#jean_pantolon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_mina"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_C"/>
+        <untitled-ontology-12:ad>jean pantolon</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Levi&apos;s®&apos;ın şimdiye kadarki en yüksek belli modeli. Ribcage Jean, 12 inçlik beliyle kalçaları incelten, beli belirginleştiren ve bacakları uzatan bir tutkuya dönüştü. Bu kesim, vücudunuzu ortaya çıkaracak ve göründüğünüz kadar harika hissetmenizi sağlayacaktır. *Şık bir yüksek kesim ile çok yönlü bir kalıp. *Klasik düz paça ile tamamlanmıştır. *Bilekte biter. 85% Pamuk, 13% Polyester, 2% Elastan</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>38</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>A774300010</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Pantolon</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Kot</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Mavi</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1265</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-04-05T09:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Turkiye</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_leyla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_leyla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mont"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#spor_taytı"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#sweet_shirt"/>
+        <untitled-ontology-12:ad>leyla</untitled-ontology-12:ad>
+        <untitled-ontology-12:boy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">175</untitled-ontology-12:boy>
+        <untitled-ontology-12:kilo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">58</untitled-ontology-12:kilo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_mina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_mina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#jean_pantolon"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#pantolon"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#triko_elbise"/>
+        <untitled-ontology-12:ad>mina</untitled-ontology-12:ad>
+        <untitled-ontology-12:boy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">165</untitled-ontology-12:boy>
+        <untitled-ontology-12:kilo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">53</untitled-ontology-12:kilo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_zeynep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_zeynep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mini_etek"/>
+        <untitled-ontology-12:giyiyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#tshirt"/>
+        <untitled-ontology-12:ad>Zeynep</untitled-ontology-12:ad>
+        <untitled-ontology-12:boy rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">170</untitled-ontology-12:boy>
+        <untitled-ontology-12:kilo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</untitled-ontology-12:kilo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mini_etek -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mini_etek">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_zeynep"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_B"/>
+        <untitled-ontology-12:ad>mini etek</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Kadın Siyah Kloş Şort Etek Esnek Toparlayıcı Çok Rahat</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>M</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>KE2508</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Etek</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Pamuklu</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Yesil</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15265</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-05-05T05:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Ukrayna</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mont -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mont">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_leyla"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_A"/>
+        <untitled-ontology-12:ad>mont</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Farklı renkleri mevcut, fermuarlı, kapüşonlu, dik yaka, yan cepli, şişme mont.
+            100% polyester
+            KURU TEMİZLEME YAPILAMAZ - 30ºC DE MAKİNADA HASSAS YIKAMA - BEYAZLATICI KULLANILMAZ - 110ºC DERECEDE ÜTÜLEME - MERDANELI TEMIZLEME YAPILAMAZ</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>36</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>07712369</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Mont</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Aktilik</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Gri</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">975</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-07-07T07:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Almanya</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#pantolon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#pantolon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_mina"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_C"/>
+        <untitled-ontology-12:ad>pantolon</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Ürün hakkında sorularınız müşteri temsilcilerimiz tarafından hızlı bir şekilde cevaplanıcaktır. Beden konusunda bilgi alabilirsiniz.
+            ÖNEMLİ BİLGİLENDİRME: Pantolon tam kalıp ve Likralıdır. Kendi bedeninizi tercih edebilirsiniz.
+            Stüdyo Çekimlerinde Renkler Işık Farklılığından Dolayı Değişiklik Gösterebilir.</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>36</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>MNR-RS-103</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Pantolon</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Kot</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Mavi</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">56</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T05:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Ingiltere</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mini_etek"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#mont"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#spor_taytı"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#tshirt"/>
+        <untitled-ontology-12:ad>trenyollandık</untitled-ontology-12:ad>
+        <untitled-ontology-12:email>satıcı_A@gmail.com</untitled-ontology-12:email>
+        <untitled-ontology-12:id>tr8562</untitled-ontology-12:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_B -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_B">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#sweet_shirt"/>
+        <untitled-ontology-12:ad>ayhan butik</untitled-ontology-12:ad>
+        <untitled-ontology-12:email>satıcı_B@gmail.com</untitled-ontology-12:email>
+        <untitled-ontology-12:id>ayhan 8181</untitled-ontology-12:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_C -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_C">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#jean_pantolon"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#pantolon"/>
+        <untitled-ontology-12:satıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#triko_elbise"/>
+        <untitled-ontology-12:ad>pollyvilla</untitled-ontology-12:ad>
+        <untitled-ontology-12:email>satıcı_C@gmail.com</untitled-ontology-12:email>
+        <untitled-ontology-12:id>polly799</untitled-ontology-12:id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#spor_taytı -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#spor_taytı">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_leyla"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_A"/>
+        <untitled-ontology-12:ad>spor taytı</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Mankenin üzerindeki ürün S/36 bedendir.
+            %92 Polyester %8 Elastan, Örme Kumaş
+            Stüdyo çekimlerinde renkler ışık farklılığından dolayı değişiklik gösterebilir.</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>S</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>TWOAW21TA0029</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Tayt</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Naylon</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Turuncu</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-02-02T02:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Rusya</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#sweet_shirt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#sweet_shirt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_leyla"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_B"/>
+        <untitled-ontology-12:ad>sweet_shirt</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Bu premium sweet mükemmele olabildiğince yakın. Her türlü baskı için optimize edilmiştir ve kısa sürede favori tişörtünüz haline gelecektir. Yumuşak, rahat ve dayanıklı bu kesinlikle sahip olunması gereken bir üründür.Oversize kesim Geniş Kalıp %100 pamuk Omuz, kol, yaka ve belde çift dikişli, güçlendirilmiş dikişler Tüm baskı yöntemlerinde mükemmel parlaklık için optimize edildi</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>L</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>TYC6KD3B0N170065875103848</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Sweatshirt</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Pamuklu</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Turuncu</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">89</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2023-01-01T01:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Ukrayna</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#triko_elbise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#triko_elbise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_mina"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_C"/>
+        <untitled-ontology-12:ad>tshirt</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>Kampanya fiyatından satılmak üzere 100 adetten fazla stok sunulmuştur.
+            İncelemiş olduğunuz ürünün satış fiyatını satıcı belirlemektedir.
+            Bir ürün, birden fazla satıcı tarafından satılabilir. Birden fazla satıcı tarafından satışa sunulan ürünlerin satıcıları ürün için belirledikleri fiyata, satıcı puanlarına, teslimat statülerine, ürünlerdeki promosyonlara, kargonun bedava olup olmamasına ve ürünlerin hızlı teslimat ile teslim edilip edilememesine, ürünlerin stok ve kategorileri bilgilerine göre sıralanmaktadır.
+            Bu üründen en fazla 11 adet sipariş verilebilir. 11 adedin üzerindeki siparişleri Trendyol iptal etme hakkını saklı tutar. Belirlenen bu limit kurumsal siparişlerde geçerli olmayıp, kurumsal siparişler için farklı limitler belirlenebilmektedir.
+            15 gün içinde ücretsiz iade. Detaylı bilgi için tıklayın.
+            Ürünümüz Trikodur. %51 Pamuk %43 Polyester %5 Viskon %1 Elastan, Örme Kumaş içermektedir. Elbise Boy uzunluğu 135 cmdir. Uzun Kollu Balıkçı Yaka Triko Kalem Elbise rahat yapısıyla günlük hayatta tercih edebileceğiniz kurtarıcı ve kombin parçadır.</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>M</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>LADY-0011</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Elbise</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Polyester</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Beyaz</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">789</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-06-24T12:13:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Almanya</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#tshirt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#tshirt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#ürün"/>
+        <untitled-ontology-12:giyiliyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#manken_zeynep"/>
+        <untitled-ontology-12:satılıyor rdf:resource="http://www.semanticweb.org/ugurxaslan/ontologies/2023/11/untitled-ontology-12#satıcı_A"/>
+        <untitled-ontology-12:ad>tshirt</untitled-ontology-12:ad>
+        <untitled-ontology-12:açıklama>MAVİ Siyah %100 Pamuk Regular/Normal Kalıp Basic V Yaka Uzun Kollu Örme T-Shirt</untitled-ontology-12:açıklama>
+        <untitled-ontology-12:beden>S</untitled-ontology-12:beden>
+        <untitled-ontology-12:id>TWOAW21TS0099</untitled-ontology-12:id>
+        <untitled-ontology-12:kategory>Tisort</untitled-ontology-12:kategory>
+        <untitled-ontology-12:kumaş>Pamuklu</untitled-ontology-12:kumaş>
+        <untitled-ontology-12:puan rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-12:puan>
+        <untitled-ontology-12:renk>Beyaz</untitled-ontology-12:renk>
+        <untitled-ontology-12:satışadedi rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1536</untitled-ontology-12:satışadedi>
+        <untitled-ontology-12:stok rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50</untitled-ontology-12:stok>
+        <untitled-ontology-12:yayın_tarihi rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-04T15:30:00</untitled-ontology-12:yayın_tarihi>
+        <untitled-ontology-12:üretildiği_yer>Turkiye</untitled-ontology-12:üretildiği_yer>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
